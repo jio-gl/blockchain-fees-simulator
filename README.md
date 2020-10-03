@@ -27,3 +27,5 @@ We plan to use syntethic data and also empiric registered data from transaction 
 [2] Ethereum's Growing Gas Crisis (And What's Being Done to Stop It) https://www.coindesk.com/ethereums-growing-gas-crisis-and-whats-being-done-to-stop-it
 
 [3] Ethereum scalability issues exposed as high gas fees stall DeFi boom https://cointelegraph.com/news/ethereum-scalability-issues-exposed-as-high-gas-fees-stall-defi-boom
+
+[4] A transaction pricing mechanism that includes fixed-per-block network fee that is burned and dynamically expands/contracts block sizes to deal with transient congestion. https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1559.md
