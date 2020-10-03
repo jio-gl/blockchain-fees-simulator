@@ -1,0 +1,43 @@
+Blocknative Data from March 13 2020
+
+Files beginning with "new-tx-" contain new transaction detection by any of our nodes. Files are identified by UTC date and hour. The files contain the following fields in order:
+
+timeStamp (in UTC)
+hash
+nonce
+gas
+gasPrice
+value
+toAddress
+fromAddress
+input (contract input data)
+
+URLs: https://bnc-mainnet-2020-03-13.s3.amazonaws.com/new-tx-2020-03-13T00Z.csv.zip  (T00Z through T23Z)
+
+Files beginning with "tx-state-" contain transaction state change detection (including initial pending) by any of our nodes. Files are identified by UTC date and hour. The files contain the following fields in order:
+
+detecttime (in UTC)
+hash
+status
+node
+
+URLs: https://bnc-mainnet-2020-03-13.s3.amazonaws.com/tx-state-2020-03-13T00Z.csv.zip  (T00Z through T23Z)
+
+Possible status values are:
+pending - entrant to pending part of mempool
+stuck - entrant to queued part of mempool (nonce gap with existing pending tx)
+confirmed - added to block with successful tx execution
+failed - added to block with failed tx execution
+cancel - replaced by new tx with same from/nonce (node requires 10% increase in gasPrice)
+speedup - replaced by new tx with same from/nonce/to/value/input (node requires 10% increase in gasPrice)
+dropped - previously pending tx not seen in mempool for 30 min (this status may not be reliable)
+
+Included nodes and their configs are:
+GETH_1_A_PROD		Virginia, unrestricted mempool
+GETH_1_B_PROD		Virginia, unrestricted mempool
+GETH_1_C_PROD		Virginia, standard mempool (4K slots)
+GETH_EUC1_A_PROD	Frankfurt, unrestricted mempool
+GETH_EUC1_B_PROD	Frankfurt, unrestricted mempool
+GETH_APSE1_B_PROD	Singapore, unrestricted mempool
+GETH_APSE1_A_PROD	Singapore, unrestricted mempool
+PARITY_1_B_PROD		Virginia, standard mempool (8K slots)
