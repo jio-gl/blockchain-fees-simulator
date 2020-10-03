@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Current 1st Price Auction of transactions fees to be included a in a block in Ethereum is leading to price spikes under congestion scenarios [3]:
+Current First-price Auction of transactions fees to be included a in a block in Ethereum is leading to price spikes under congestion scenarios [3]:
 
 > Ethereum’s existing gas prices respond to the relatively limited number of transactions that one can facilitate using a single block. Miners, in such a scenario, can choose the highest-priced transactions as their priority, so the result is an increase in effective gas prices.
 
@@ -12,9 +12,9 @@ A simulation tool for blockchain fees, aka gas market in Ethereum-type blockchai
 
 We want to compare at least the following strategies:
 
- - Bitcoin/Ethereum standard 1st Price Auction.
+ - Bitcoin/Ethereum standard First-price Auction.
  - Ethereum EIP-1599, floating minimum gas-price, currently implemented in the Celo Blockchain.
- - Experimental Dutch-auction strategies.
+ - Experimental Dutch-auction strategies, also called uniform-price auction [5].
  
 We plan to use syntethic data and also empiric registered data from transaction mempool, such as published by Blocknative [0].
 
