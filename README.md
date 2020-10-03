@@ -2,6 +2,10 @@
 
 ## Introduction
 
+Because the size of blocks in blockchain is limited by network propagation, the miners must have a way to choose which transactions go early and which ones can be left for later blocks [1]:
+
+> how does a miner prioritize among potential candidates to get into a block? If there are more candidate transactions than slots in a block, how do we decide what goes where? You might think a egalitarian approach is ideal: everyone is treated equally, and miners include transactions into blocks on a first-come-first-serve basis.
+
 Current First-price Auction of transactions fees to be included a in a block in Ethereum is leading to price spikes under congestion scenarios [3]:
 
 > Ethereum’s existing gas prices respond to the relatively limited number of transactions that one can facilitate using a single block. Miners, in such a scenario, can choose the highest-priced transactions as their priority, so the result is an increase in effective gas prices.
