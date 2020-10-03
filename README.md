@@ -5,7 +5,7 @@ A simulation tool for blockchain fees, aka gas market in Ethereum-type blockchai
 We want to compare at least the following strategies:
 
  - Bitcoin/Ethereum standard 1st Price Auction.
- - Ethereum EIP-1599, currently implemented in the Celo Blockchain.
+ - Ethereum EIP-1599, floating minimum gas-price, currently implemented in the Celo Blockchain.
  - Experimental Dutch-auction strategies.
  
 We plan to use syntethic data and also empiric registered data from transaction mempool, such as published by Blocknative [0].
