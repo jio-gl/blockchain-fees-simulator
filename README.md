@@ -4,7 +4,7 @@
 
 Current 1st Price Auction of transactions fees to be included a in a block in Ethereum is leading to price spikes under congestion scenarios [3]:
 
-> Ethereum’s existing gas prices respond to the relatively limited number of transactions that one can facilitate using a single block. Miners, in such a scenario, > can choose the highest-priced transactions as their priority, so the result is an increase in effective gas prices.
+> Ethereum’s existing gas prices respond to the relatively limited number of transactions that one can facilitate using a single block. Miners, in such a scenario, can choose the highest-priced transactions as their priority, so the result is an increase in effective gas prices.
 
 ## Description
 
