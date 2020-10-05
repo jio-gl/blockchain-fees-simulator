@@ -24,8 +24,8 @@ We plan to use syntethic data and also empiric registered data from transaction 
 
 Our focus is on Dutch-auction/uniform-price to prove that performs better on prices (prices are lower). We also assume that cricismd to Dutch-auction/uniform-price do not sustain:
 
- - bribing attacks:
- - blah.
+ - Miner own transactions: if the miner includes its own transactions he can only move the price down he *cannot raise the gas price* if there are transactions for other people to be included in the block;
+ - Bribing attacks: the miner can influence transaction senders with bribes or refunds because 1$ change in one transaction can influence all the transactions in the block (> 1$ impact). These criticism do not sustain because to raise gas prices the miner must bribe or influence *all* the transactions to be included in the block.
 
 ## Bibliography
 
