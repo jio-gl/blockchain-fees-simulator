@@ -22,6 +22,11 @@ We want to compare at least the following strategies:
  
 We plan to use syntethic data and also empiric registered data from transaction mempool, such as published by Blocknative [0].
 
+Our focus is on Dutch-auction/uniform-price to prove that performs better on prices (prices are lower). We also assume that cricismd to Dutch-auction/uniform-price do not sustain:
+
+ - bribing attacks:
+ - blah.
+
 ## Bibliography
 
 [0] Evidence of Mempool Manipulation on Black Thursday: Hammerbots, Mempool Compression, and Spontaneous Stuck Transactions https://blog.blocknative.com/blog/mempool-forensics
